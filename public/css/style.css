@@ -1,14 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @font-face {
-  font-family: "Mattone 150";
-  src: url("assets/Mattone/web/Mattone-150.woff2") format("woff2"), url("assets/Mattone/web/Mattone-150.woff") format("woff");
+  font-family: "Mattone-150";
+  src: url("/assets/Mattone/web/Mattone-150.woff2") format("woff2"), url("/assets/Mattone/web/Mattone-150.woff") format("woff");
 }
 body {
-  background: red;
+  height: 100vh;
+  overflow: hidden;
+  /* Hide scrollbars */
 }
 
-h1 {
-  font-family: "Mattone 150";
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+}
+
+.nav {
+  grid-area: 1/1/2/13;
+  border-bottom: black 2px solid;
+}
+.nav .title {
+  font-family: "Varela Round";
+}
+
+.side {
+  grid-area: 2/1/8/3;
+  border-right: black 2px solid;
+  font-size: 10vh;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.side .feelings {
+  font-family: "Mattone-150";
+  white-space: nowrap;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  flex-wrap: nowrap;
+}
+
+.right {
+  grid-area: 2/9/8/13;
+  border-left: black 2px solid;
+}
+
+.footer-right {
+  grid-area: 8/9/9/13;
+  border-top: black 2px solid;
+  border-left: black 2px solid;
+}
+
+.footer-left {
+  grid-area: 8/1/9/9;
+  border-top: black 2px solid;
+  align-items: center;
+}
+.footer-left ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  grid-area: 2/3/8/9;
+  background-image: url("/assets/images/love-dress-white-04.jpeg");
+  background-size: cover;
+  background-position: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
