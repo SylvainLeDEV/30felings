@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@font-face {
+  font-family: "Mattone 150";
+  src: url("assets/Mattone/web/Mattone-150.woff2") format("woff2"), url("assets/Mattone/web/Mattone-150.woff") format("woff");
+}
+body {
+  background: red;
+}
+
+h1 {
+  font-family: "Mattone 150";
+}
+
+/*# sourceMappingURL=style.css.map */
