@@ -30,7 +30,19 @@ body {
   border-bottom: black 2px solid;
 
   .title{
-   font-family: "Varela Round";
+    font-family: "Varela Round";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  .burger{
+    width: 30px;
+    height: 30px;
+    border: black 2px solid;
+
   }
 }
 
@@ -44,6 +56,8 @@ body {
 
   .feelings {
 
+    height: 100%;
+    margin: 0 auto;
     font-family: "Mattone-150";
     white-space: nowrap;
     letter-spacing: 2px;
@@ -64,18 +78,26 @@ body {
   grid-area: 8 / 9 / 9 / 13;
   border-top: black 2px solid;
   border-left: black 2px solid;
+
+  span{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+  }
 }
 
 .footer-left {
   grid-area: 8 / 1 / 9 / 9;
   border-top: black 2px solid;
   align-items: center;
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-around;
+
   ul{
     display: flex;
     justify-content: space-around;
+    height: 100%;
+    align-items: center;
+
   }
 }
 
